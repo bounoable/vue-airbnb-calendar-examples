@@ -2,9 +2,10 @@
 import { createComponent } from '@vue/composition-api'
 import PlainCalendar from './examples/PlainCalendar.vue'
 import SelectionCalendar from './examples/SelectionCalendar.vue'
+import ReservationsCalendar from './examples/ReservationsCalendar.vue'
 
 export default createComponent({
-  components: { PlainCalendar, SelectionCalendar },
+  components: { PlainCalendar, SelectionCalendar, ReservationsCalendar },
 })
 </script>
 
@@ -32,8 +33,13 @@ export default createComponent({
     </section>
 
     <section class="Example">
-      <h2 class="ExampleHeading">With Selection Plugin</h2>
+      <h2 class="ExampleHeading">Selection Plugin</h2>
       <SelectionCalendar/>
+    </section>
+
+    <section class="Example">
+      <h2 class="ExampleHeading">Selection Plugin with reservations option</h2>
+      <ReservationsCalendar/>
     </section>
   </div>
 </div>

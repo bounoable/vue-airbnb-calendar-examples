@@ -6796,6 +6796,11 @@ reselect@^3.0.1:
   resolved "https://registry.yarnpkg.com/reselect/-/reselect-3.0.1.tgz#efdaa98ea7451324d092b2b2163a6a1d7a9a2147"
   integrity sha1-79qpjqdFEyTQkrKyFjpqHXqaIUc=
 
+resize-observer-polyfill@^1.5.1:
+  version "1.5.1"
+  resolved "https://registry.yarnpkg.com/resize-observer-polyfill/-/resize-observer-polyfill-1.5.1.tgz#0e9020dd3d21024458d4ebd27e23e40269810464"
+  integrity sha512-LwZrotdHOo12nQuZlHEmtuXdqGoOD0OhaxopaNFxWzInpEgaLWoVuAMbTzixuosCx2nEG58ngzW3vxdWoxIgdg==
+
 resolve-cwd@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/resolve-cwd/-/resolve-cwd-2.0.0.tgz#00a9f7387556e27038eae232caa372a6a59b665a"
@@ -8084,15 +8089,25 @@ vm-browserify@^1.0.1:
   resolved "https://registry.yarnpkg.com/vm-browserify/-/vm-browserify-1.1.0.tgz#bd76d6a23323e2ca8ffa12028dc04559c75f9019"
   integrity sha512-iq+S7vZJE60yejDYM0ek6zg308+UZsdtPExWP9VZoCFCz1zkJoXFnAX7aZfd/ZwrkidzdUZL0C/ryW+JwAiIGw==
 
-vue-airbnb-calendar@^0.2.6:
-  version "0.2.6"
-  resolved "https://registry.yarnpkg.com/vue-airbnb-calendar/-/vue-airbnb-calendar-0.2.6.tgz#ead6a34c5deab79f75b5d2124c55ef4a030a80fe"
-  integrity sha512-sF5R40+TAGeB+esAeKviZky7xhtjeL5tO31P8j4gDUzTtrDfR0dTctVM+u7NzDZjah17kMNR0l7Nckj8bGjxYw==
+vue-airbnb-calendar-plugin-selection@^0.8.6:
+  version "0.8.6"
+  resolved "https://registry.yarnpkg.com/vue-airbnb-calendar-plugin-selection/-/vue-airbnb-calendar-plugin-selection-0.8.6.tgz#87be8adf74f0a95022ec2d983b79cd1a98856e66"
+  integrity sha512-cmL7Vu7LhP1zDG28OQ3+fgCgQkCTn8G0Rp00f5thmh1CMLYWlGmDm6gIBXm/WTdw5/GtvSg0JjNcAe3nSOCBPg==
+  dependencies:
+    "@vue/composition-api" "^0.3.2"
+    vue "^2.6.10"
+    vue-airbnb-calendar "^0.8.4"
+
+vue-airbnb-calendar@^0.8.4:
+  version "0.8.4"
+  resolved "https://registry.yarnpkg.com/vue-airbnb-calendar/-/vue-airbnb-calendar-0.8.4.tgz#a5b89e51e0223393c6e5cbae1960f8c6c4570b60"
+  integrity sha512-1hNOxfKXW/P2ujSH24Tk8BhBj2jB8YqJ5y3vJRhJLvbySgrftv3iX7FCBlqDwTubQXPT6lCKikfsIhNGjPRT/w==
   dependencies:
     "@vue/composition-api" "^0.3.2"
     core-js "^3.3.2"
     date-fns "^2.4.1"
     lodash "^4.17.15"
+    resize-observer-polyfill "^1.5.1"
     uuid "^3.3.3"
     vue "^2.6.10"
 
